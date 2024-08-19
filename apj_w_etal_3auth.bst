@@ -1,4 +1,3 @@
-
 %% $Log: apj.bst,v $
 %% Revision 1.4  2002/06/18 16:37:48  alberto
 %% Add comma after first author in two-author reference
@@ -1609,7 +1608,7 @@ FUNCTION {begin.bib}
     'skip$
     { preamble$ write$ newline$ }
   if$
-  "\begin{thebibliography}{" number.label int.to.str$ * "}" *
+  "\vspace{5pt}\noindent{}\begin{thebibliography}{" number.label int.to.str$ * "}" *
   write$ newline$
   "\expandafter\ifx\csname natexlab\endcsname\relax\def\natexlab#1{#1}\fi"
   write$ newline$
